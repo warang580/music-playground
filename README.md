@@ -7,8 +7,10 @@ Start making music with Clojure with instant feedback.
 - `git clone git@github.com:warang580/music-playground.git`
 - `cd music-playground`
 - `lein repl`
-- `(in-ns 'music.core)`
-- `(play! [:piano #{:c :e :g}])`
+- `(use 'music.player :reload-all)` <- not sure about that one
+- `(play! [:piano 1/2 #{:c :e :g :+c}])`
+
+You can also edit `src/music/core.clj` in your favorite text editor that handles REPL to start your compositions.
 
 ## Usage
 
@@ -18,4 +20,5 @@ Start making music with Clojure with instant feedback.
 - [Score examples](https://oakes.github.io/edna/cljs/edna.examples.html)
 - [Available instruments](https://github.com/alda-lang/alda/blob/master/doc/list-of-instruments.md)
 
-For the full version, check https://github.com/oakes/edna. *The current repository is only a stripped-down version of the work of [Zach Oakes](https://sekao.net/) so it's more accessible. All credits goes to him !*
+For the full version, check [github:oakes/edna](https://github.com/oakes/edna).
+*The current repository is only a stripped-down version of the work of [Zach Oakes](https://sekao.net/) so it's more accessible. All credits goes to him !*
